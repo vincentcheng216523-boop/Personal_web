@@ -1,0 +1,57 @@
+/* src/components/Hero.css */
+.hero-simple {
+  display: flex;
+  align-items: center;        /* ← This centers the text vertically with the image */
+  gap: 5rem;                  /* space between photo and text */
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+}
+
+/* Left-aligned photo */
+.hero-photo {
+  width: 380px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  flex-shrink: 0;             /* prevents shrinking */
+}
+
+/* Text */
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin: 0 0 1rem 0;
+  color: #000000;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #000000;
+  max-width: 600px;
+}
+
+/* Dark mode */
+body.dark-mode .hero-text h1 { color: #000000; }
+body.dark-mode .hero-text p { color: #000000; }
+
+/* Mobile: stack vertically */
+@media (max-width: 768px) {
+  .hero-simple {
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 1.5rem;
+    gap: 2rem;
+  }
+  
+  .hero-photo {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.3rem;
+  }
+}

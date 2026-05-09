@@ -1,0 +1,78 @@
+/* src/components/Education.css */
+.education-section {
+  padding: 6rem 2rem;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+/* ← THE SHADOWED BLOCK */
+.education-card {
+  max-width: 1200px;
+  width: 100%;
+  background: white;
+  padding: 3.5rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.education-card h2 {
+  font-size: 2.8rem;
+  margin: 0 0 3rem 0;
+  text-align: center;
+  color: #1f2937;
+}
+
+.education-item {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+
+.education-year {
+  min-width: 120px;
+  font-weight: 600;
+  color: #3b82f6;
+  font-size: 1.1rem;
+}
+
+.education-details h3 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.5rem;
+  color: #1f2937;
+}
+
+.education-details h4 {
+  margin: 0 0 0.8rem 0;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.education-details p {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .education-section {
+    padding: 4rem 1rem;
+  }
+  .education-card {
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+  }
+  .education-item {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .education-year {
+    min-width: auto;
+  }
+  .education-card h2 {
+    font-size: 2.3rem;
+  }
+}
