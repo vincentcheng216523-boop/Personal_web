@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Personal_web/static/css/main.57a10901.css",
-    "main.js": "/Personal_web/static/js/main.df384b53.js",
+    "main.js": "/Personal_web/static/js/main.5c9d1a9c.js",
     "static/media/icon.jpg": "/Personal_web/static/media/icon.3209ae20502b43aa0e7f.jpg",
     "static/media/lille-logo.png": "/Personal_web/static/media/lille-logo.658d89f6a75ef2bea608.png",
     "static/media/cuhk-logo.png": "/Personal_web/static/media/cuhk-logo.cfc39e0abc3c841f563c.png",
     "static/media/NCU-logo.png": "/Personal_web/static/media/NCU-logo.30d2f93b0c4520b36a67.png",
     "index.html": "/Personal_web/index.html",
     "main.57a10901.css.map": "/Personal_web/static/css/main.57a10901.css.map",
-    "main.df384b53.js.map": "/Personal_web/static/js/main.df384b53.js.map"
+    "main.5c9d1a9c.js.map": "/Personal_web/static/js/main.5c9d1a9c.js.map"
   },
   "entrypoints": [
     "static/css/main.57a10901.css",
-    "static/js/main.df384b53.js"
+    "static/js/main.5c9d1a9c.js"
   ]
 }
