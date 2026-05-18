@@ -1,57 +1,107 @@
 /* src/components/Hero.css */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Akt:wght@100..900&display=swap');
+
 .hero-simple {
   display: flex;
-  align-items: center;        /* ← This centers the text vertically with the image */
-  gap: 5rem;                  /* space between photo and text */
-  padding: 6rem 2rem;
+  align-items: center;
+  gap: 5rem;
+  padding: 4rem 2rem 6rem;     /* Increased top padding */
   max-width: 1200px;
-  margin: 0 auto;
-  background: white;
+  margin: 4rem auto 0;         /* Added top margin to push it down */
+  background: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
 }
 
-/* Left-aligned photo */
 .hero-photo {
   width: 380px;
   height: auto;
   border-radius: 16px;
   object-fit: cover;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-  flex-shrink: 0;             /* prevents shrinking */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
 }
 
-/* Text */
+/* Text with White Background in Mind */
+.hero-text {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+
+}
+
 .hero-text h1 {
+  font-family: 'Poppins', sans-serif;
   font-size: 2.8rem;
-  margin: 0 0 1rem 0;
-  color: #000000;
+  font-weight: 600;
+  margin: 0 0 1.2rem 0;
+  color: #1a1a1a;               /* Deep black for maximum contrast on white */
+  letter-spacing: -0.025em;
 }
 
 .hero-text p {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   font-size: 1.2rem;
-  line-height: 1.8;
-  color: #000000;
-  max-width: 600px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #333333;               /* Dark gray for excellent readability */
+  max-width: 620px;
 }
 
-/* Dark mode */
-body.dark-mode .hero-text h1 { color: #000000; }
-body.dark-mode .hero-text p { color: #000000; }
+/* Remove dark mode styles if your site is always light */
+body.dark-mode .hero-simple {
+  background: #ffffff;
+}
 
-/* Mobile: stack vertically */
+body.dark-mode .hero-text h1,
+body.dark-mode .hero-text p {
+  color: #1a1a1a;   /* Keep dark text even in dark mode for this section */
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   .hero-simple {
     flex-direction: column;
     text-align: center;
     padding: 4rem 1.5rem;
-    gap: 2rem;
+    gap: 2.5rem;
   }
   
   .hero-photo {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
   }
   
   .hero-text h1 {
-    font-size: 2.3rem;
+    font-size: 2.35rem;
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+}
+
+.social-icon {
+  color: #bbb;
+  transition: all 0.3s ease;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.social-icon:hover {
+  color: white;
+  background-color: #333;
+  transform: translateY(-4px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 50px 20px 30px;
+  }
+  
+  .social-icon {
+    padding: 10px;
   }
 }
